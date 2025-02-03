@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
+    <Store Nr="1" Type="position" Value="current" Name="current_pose" Descr="" />
+    <Store Nr="2" Type="number" Value="10" Name="pose_threshold" Descr="Threshold for pose validation [mm]" />
+    <MathOperator Nr="3" Function="multiply" FirstOperand="pose_threshold" SecondOperand="pose_threshold" Descr="Compute square of absolute value of pose threshold [mm^2]" />
+    <MathOperator Nr="4" Function="subtract" FirstOperand="current_pose.x" SecondOperand="starting_pose.x" Descr="Get difference between currrent pose and resting pose (x) [mm]" />
+    <MathOperator Nr="5" Function="subtract" FirstOperand="current_pose.y" SecondOperand="starting_pose.y" Descr="Get difference between currrent pose and resting pose (y) [mm]" />
+    <MathOperator Nr="6" Function="subtract" FirstOperand="current_pose.z" SecondOperand="starting_pose.z" Descr="Get difference between currrent pose and resting pose (z) [mm]" />
+    <MathOperator Nr="7" Function="multiply" FirstOperand="current_pose.x" SecondOperand="current_pose.x" Descr="Compute square of absolute difference (x) [mm^2]" />
+    <MathOperator Nr="8" Function="multiply" FirstOperand="current_pose.y" SecondOperand="current_pose.y" Descr="Compute square of absolute difference (y) [mm^2]" />
+    <MathOperator Nr="9" Function="multiply" FirstOperand="current_pose.z" SecondOperand="current_pose.z" Descr="Compute square of absolute difference (z) [mm^2]" />
+    <Store Nr="10" Type="number" Value="1" Name="pose_ok" Descr="Stores whether or not the current pose is valid" />
+    <If Nr="11" Condition="(current_pose.x &lt; pose_threshold) AND (current_pose.y &lt; pose_threshold) AND (current_pose.z &lt; pose_threshold)" Descr="Verify that we are starting at the resting pose" />
+    <MathOperator Nr="12" Function="set" FirstOperand="pose_ok" SecondOperand="1" Descr="Starting pose is valid" />
+    <Else Nr="13" Descr="" />
+    <MathOperator Nr="14" Function="set" FirstOperand="pose_ok" SecondOperand="0" Descr="Starting pose is not valid" />
+    <EndIf Nr="15" Descr="" />
+</Program>

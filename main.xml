@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
+    <Loop Nr="1" Mode="DIn" Condition="False" Descr="Main loop" />
+    <If Nr="2" Condition="Din27" Descr="This must be detected high before the other inputs are evaluated (for synchronisation)" />
+    <If Nr="3" Condition="!Din26 AND !Din25 AND !Din24 AND !Din23 AND !Din22" Descr="(00000) Rest -&gt; Rest" />
+    <Sub Nr="4" File="rest_to_rest.xml" Descr="" />
+    <Else Nr="5" Descr="" />
+    <EndIf Nr="6" Descr="" />
+    <If Nr="7" Condition="!Din26 AND !Din25 AND !Din24 AND !Din23 AND Din22" Descr="(00001) Rest -&gt; Pick" />
+    <Sub Nr="8" File="rest_to_pick.xml" Descr="" />
+    <Else Nr="9" Descr="" />
+    <EndIf Nr="10" Descr="" />
+    <If Nr="11" Condition="!Din26 AND !Din25 AND !Din24 AND Din23 AND !Din22" Descr="(00010) Pick -&gt; Pick Coin Ready" />
+    <Sub Nr="12" File="pick_to_pick_coin_ready.xml" Descr="" />
+    <Else Nr="13" Descr="" />
+    <EndIf Nr="14" Descr="" />
+    <If Nr="15" Condition="!Din26 AND !Din25 AND !Din24 AND Din23 AND Din22" Descr="(00011) Pick Coin Ready -&gt; Pig 1" />
+    <Sub Nr="16" File="pick_coin_ready_to_pig_1.xml" Descr="" />
+    <Else Nr="17" Descr="" />
+    <EndIf Nr="18" Descr="" />
+    <If Nr="19" Condition="!Din26 AND !Din25 AND Din24 AND !Din23 AND !Din22" Descr="(00100) Pick Coin Ready -&gt; Pig 2" />
+    <Comment Nr="20" Descr="00100" />
+    <Sub Nr="21" File="pick_coin_ready_to_pig_2.xml" Descr="" />
+    <Else Nr="22" Descr="" />
+    <EndIf Nr="23" Descr="" />
+    <If Nr="24" Condition="!Din26 AND !Din25 AND Din24 AND !Din23 AND Din22" Descr="(00101) Pick Coin Ready -&gt; Pig 3" />
+    <Sub Nr="25" File="pick_coin_ready_to_pig_3.xml" Descr="" />
+    <Else Nr="26" Descr="" />
+    <EndIf Nr="27" Descr="" />
+    <If Nr="28" Condition="!Din26 AND !Din25 AND Din24 AND Din23 AND !Din22" Descr="(00110) Pick Coin Ready -&gt; Bin" />
+    <Sub Nr="29" File="pick_coin_ready_to_bin.xml" Descr="" />
+    <Else Nr="30" Descr="" />
+    <EndIf Nr="31" Descr="" />
+    <If Nr="32" Condition="!Din26 AND !Din25 AND Din24 AND Din23 AND Din22" Descr="(00111) Pig 1 -&gt; Special 1" />
+    <Sub Nr="33" File="pig_1_to_special_1.xml" Descr="" />
+    <Else Nr="34" Descr="" />
+    <EndIf Nr="35" Descr="" />
+    <If Nr="36" Condition="!Din26 AND Din25 AND !Din24 AND !Din23 AND !Din22" Descr="(01000) Pig 2 -&gt; Special 2" />
+    <Sub Nr="37" File="pig_2_to_special_2.xml" Descr="" />
+    <Else Nr="38" Descr="" />
+    <EndIf Nr="39" Descr="" />
+    <If Nr="40" Condition="!Din26 AND Din25 AND !Din24 AND !Din23 AND Din22" Descr="(01001) Pig 3 -&gt; Special 3" />
+    <Sub Nr="41" File="pig_3_to_special_3.xml" Descr="" />
+    <Else Nr="42" Descr="" />
+    <EndIf Nr="43" Descr="" />
+    <If Nr="44" Condition="!Din26 AND Din25 AND !Din24 AND Din23 AND !Din22" Descr="(01010) Bin -&gt; Special Bin" />
+    <Sub Nr="45" File="bin_to_special_bin.xml" Descr="" />
+    <Else Nr="46" Descr="" />
+    <EndIf Nr="47" Descr="" />
+    <If Nr="48" Condition="!Din26 AND Din25 AND !Din24 AND Din23 AND Din22" Descr="(01011) Special 1 -&gt; Special Move 1" />
+    <Sub Nr="49" File="special_1_to_special_move_1.xml" Descr="" />
+    <Else Nr="50" Descr="" />
+    <EndIf Nr="51" Descr="" />
+    <If Nr="52" Condition="!Din26 AND Din25 AND Din24 AND !Din23 AND !Din22" Descr="(01100) Special 2 -&gt; Special Move 2" />
+    <Sub Nr="53" File="special_2_to_special_move_2.xml" Descr="" />
+    <Else Nr="54" Descr="" />
+    <EndIf Nr="55" Descr="" />
+    <If Nr="56" Condition="!Din26 AND Din25 AND Din24 AND !Din23 AND Din22" Descr="(01101) Special 3 -&gt; Special Move 3" />
+    <Sub Nr="57" File="special_3_to_special_move_3.xml" Descr="" />
+    <Else Nr="58" Descr="" />
+    <EndIf Nr="59" Descr="" />
+    <If Nr="60" Condition="!Din26 AND Din25 AND Din24 AND Din23 AND !Din22" Descr="(01110) Special Bin -&gt; Special Move Bin" />
+    <Sub Nr="61" File="special_bin_to_special_move_bin.xml" Descr="" />
+    <Else Nr="62" Descr="" />
+    <EndIf Nr="63" Descr="" />
+    <If Nr="64" Condition="!Din26 AND Din25 AND Din24 AND Din23 AND Din22" Descr="(01111) Special Move 1 -&gt; Rest" />
+    <Sub Nr="65" File="special_move_1_to_rest.xml" Descr="" />
+    <Else Nr="66" Descr="" />
+    <EndIf Nr="67" Descr="" />
+    <If Nr="68" Condition="Din26 AND !Din25 AND !Din24 AND !Din23 AND !Din22" Descr="(10000) Special Move 2 -&gt; Rest" />
+    <Comment Nr="69" Descr="10000" />
+    <Sub Nr="70" File="special_move_2_to_rest.xml" Descr="" />
+    <Else Nr="71" Descr="" />
+    <EndIf Nr="72" Descr="" />
+    <If Nr="73" Condition="Din26 AND !Din25 AND !Din24 AND !Din23 AND Din22" Descr="(10001) Special Move 3 -&gt; Rest" />
+    <Sub Nr="74" File="special_move_3_to_rest.xml" Descr="" />
+    <Else Nr="75" Descr="" />
+    <EndIf Nr="76" Descr="" />
+    <If Nr="77" Condition="Din26 AND !Din25 AND !Din24 AND Din23 AND !Din22" Descr="(10010) Special Move Bin -&gt; Rest" />
+    <Sub Nr="78" File="special_move_bin_to_rest.xml" Descr="" />
+    <Else Nr="79" Descr="" />
+    <EndIf Nr="80" Descr="" />
+    <Else Nr="81" Descr="" />
+    <EndIf Nr="82" Descr="" />
+    <EndLoop Nr="83" Descr="" />
+</Program>

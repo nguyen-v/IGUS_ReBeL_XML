@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
+    <Store Nr="1" Type="position" Value="5.6E-05 171.828 432.6158 -90.00002 3.8E-05 180" ValueJoints="90 -18 105 93 0 0 0 0 0" Name="starting_pose" Descr="" />
+    <Sub Nr="2" File="check_starting_pose.xml" Descr="" />
+    <Output Nr="3" Channel="DOut27" State="False" Descr="" />
+    <If Nr="4" Condition="pose_ok = 1" Descr="" />
+    <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="77" a2="-25" a3="112" a4="70" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="77" a2="-22" a3="94" a4="85" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="76" a2="-34" a3="120" a4="-17" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="8" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="65" a2="-9" a3="91" a4="-37" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="9" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="45" a2="-3" a3="89" a4="-64" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="10" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-26.2" a2="11.1" a3="76.6" a4="-88.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Comment Nr="11" Descr="Return pose state (0010)" />
+    <Output Nr="12" Channel="DOut25" State="False" Descr="0" />
+    <Output Nr="13" Channel="DOut24" State="False" Descr="0" />
+    <Output Nr="14" Channel="DOut23" State="True" Descr="1" />
+    <Output Nr="15" Channel="DOut22" State="False" Descr="0" />
+    <Wait Nr="16" Type="Time" Seconds="0.5" Descr="" />
+    <Output Nr="17" Channel="DOut27" State="True" Descr="" />
+    <Else Nr="18" Descr="" />
+    <EndIf Nr="19" Descr="" />
+</Program>

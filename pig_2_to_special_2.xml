@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+    <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
+    <Store Nr="1" Type="position" Value="193.1819 156.4356 610.4854 38.99999 -3E-06 0" ValueJoints="39 1.9 75.2 -77.1 0 0 0 0 0" Name="starting_pose" Descr="" />
+    <Sub Nr="2" File="check_starting_pose.xml" Descr="" />
+    <Output Nr="3" Channel="DOut27" State="False" Descr="" />
+    <If Nr="4" Condition="pose_ok = 1" Descr="" />
+    <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="49.7" a2="0.4" a3="89.1" a4="-89.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="49.7" a2="-6.5" a3="89.1" a4="70.2" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="14.1" a2="-0.4" a3="103" a4="70.2" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Comment Nr="8" Descr="Return pose state (1001)" />
+    <Output Nr="9" Channel="DOut25" State="True" Descr="1" />
+    <Output Nr="10" Channel="DOut24" State="False" Descr="0" />
+    <Output Nr="11" Channel="DOut23" State="False" Descr="0" />
+    <Output Nr="12" Channel="DOut22" State="True" Descr="1" />
+    <Wait Nr="13" Type="Time" Seconds="0.5" Descr="" />
+    <Output Nr="14" Channel="DOut27" State="True" Descr="" />
+    <Else Nr="15" Descr="" />
+    <EndIf Nr="16" Descr="" />
+</Program>
