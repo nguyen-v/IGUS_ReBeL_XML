@@ -7,7 +7,7 @@
     <If Nr="4" Condition="pose_ok = 1" Descr="" />
     <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-25.9" a2="8.6" a3="79.6" a4="-88.2" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
     <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="39.4" a2="0.5" a3="88.4" a4="-88.8" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="39" a2="1.9" a3="75.2" a4="-77.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="39.3" a2="3.8" a3="71.7" a4="-75.5" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
     <Comment Nr="8" Descr="Return pose state (0101)" />
     <Output Nr="9" Channel="DOut25" State="False" Descr="0" />
     <Output Nr="10" Channel="DOut24" State="True" Descr="1" />

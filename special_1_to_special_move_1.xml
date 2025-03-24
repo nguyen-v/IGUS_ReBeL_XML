@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Program>
     <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
-    <Store Nr="1" Type="position" Value="149.7554 184.9324 498.386 -129 17.60003 180" ValueJoints="51 -4.5 79.3 87.6 0 0 0 0 0" Name="starting_pose" Descr="" />
+    <Store Nr="1" Type="position" Value="134.2045 165.7287 520.0594 -129 23.10003 180" ValueJoints="51 -10 79.3 87.6 0 0 0 0 0" Name="starting_pose" Descr="" />
     <Sub Nr="2" File="check_starting_pose.xml" Descr="" />
     <Output Nr="3" Channel="DOut27" State="False" Descr="" />
     <If Nr="4" Condition="pose_ok = 1" Descr="" />
-    <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="5" smooth="0" a1="75.2" a2="13.6" a3="84.1" a4="89.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="5" smooth="0" a1="51" a2="-4.5" a3="79.3" a4="87.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="5" smooth="0" a1="75.2" a2="13.6" a3="84.1" a4="89.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="8" Source="Numerical" velPercent="100" acc="5" smooth="0" a1="51" a2="-4.5" a3="79.3" a4="87.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="15" smooth="0" a1="75.2" a2="13.6" a3="84.1" a4="89.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="15" smooth="0" a1="51" a2="-4.5" a3="79.3" a4="87.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="15" smooth="0" a1="75.2" a2="13.6" a3="84.1" a4="89.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="8" Source="Numerical" velPercent="100" acc="15" smooth="0" a1="51" a2="-4.5" a3="79.3" a4="87.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
     <Comment Nr="9" Descr="Return pose state (1100)" />
     <Output Nr="10" Channel="DOut25" State="True" Descr="1" />
     <Output Nr="11" Channel="DOut24" State="True" Descr="1" />

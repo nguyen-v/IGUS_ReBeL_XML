@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Program>
     <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
-    <Store Nr="1" Type="position" Value="282.9927 -2.963601 616.0291 -0.6 -7E-06 0" ValueJoints="-0.6 10.7 64.1 -74.8 0 0 0 0 0" Name="starting_pose" Descr="" />
+    <Store Nr="1" Type="position" Value="282.9733 -4.445299 616.0291 -0.9 -7E-06 0" ValueJoints="-0.9 10.7 64.1 -74.8 0 0 0 0 0" Name="starting_pose" Descr="" />
     <Sub Nr="2" File="check_starting_pose.xml" Descr="" />
     <Output Nr="3" Channel="DOut27" State="False" Descr="" />
     <If Nr="4" Condition="pose_ok = 1" Descr="" />
     <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-0.6" a2="8.7" a3="79.3" a4="-88" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="51" a2="8.7" a3="79.3" a4="-88" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="51" a2="-4.5" a3="79.3" a4="87.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="51" a2="0" a3="79.3" a4="-88" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="51" a2="-10" a3="79.3" a4="87.6" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
     <Comment Nr="8" Descr="Return pose state (1000)" />
     <Output Nr="9" Channel="DOut25" State="True" Descr="1" />
     <Output Nr="10" Channel="DOut24" State="False" Descr="0" />

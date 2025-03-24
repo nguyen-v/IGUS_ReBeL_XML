@@ -7,14 +7,15 @@
     <If Nr="4" Condition="pose_ok = 1" Descr="" />
     <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-83.6" a2="-0.4" a3="103" a4="70.2" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
     <Joint AbortCondition="False" Nr="6" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-76.5" a2="44.1" a3="117.8" a4="10.9" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-76.5" a2="56.6" a3="113.3" a4="2.8" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
-    <Comment Nr="8" Descr="Return pose state (1101)" />
-    <Output Nr="9" Channel="DOut25" State="True" Descr="1" />
-    <Output Nr="10" Channel="DOut24" State="True" Descr="1" />
-    <Output Nr="11" Channel="DOut23" State="False" Descr="0" />
-    <Output Nr="12" Channel="DOut22" State="True" Descr="1" />
-    <Wait Nr="13" Type="Time" Seconds="0.5" Descr="" />
-    <Output Nr="14" Channel="DOut27" State="True" Descr="" />
-    <Else Nr="15" Descr="" />
-    <EndIf Nr="16" Descr="" />
+    <Joint AbortCondition="False" Nr="7" Source="Numerical" velPercent="100" acc="100" smooth="50" a1="-75.1" a2="58.6" a3="109.4" a4="4.8" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Wait Nr="8" Type="Time" Seconds="5" Descr="" />
+    <Comment Nr="9" Descr="Return pose state (1101)" />
+    <Output Nr="10" Channel="DOut25" State="True" Descr="1" />
+    <Output Nr="11" Channel="DOut24" State="True" Descr="1" />
+    <Output Nr="12" Channel="DOut23" State="False" Descr="0" />
+    <Output Nr="13" Channel="DOut22" State="True" Descr="1" />
+    <Wait Nr="14" Type="Time" Seconds="0.5" Descr="" />
+    <Output Nr="15" Channel="DOut27" State="True" Descr="" />
+    <Else Nr="16" Descr="" />
+    <EndIf Nr="17" Descr="" />
 </Program>
