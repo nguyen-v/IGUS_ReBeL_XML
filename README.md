@@ -22,7 +22,7 @@ This repository is a collection of XML files used in a pick-and-place coin sorte
 ## Troubleshooting
 If the robot stops at an awkward position (different from any of the normal states), you must manually bring it back to its resting pose.
 
-1. Manually jog it close to the rest position, then load the `straight_to_rest.xml` file
+1. Manually jog it close to the rest position, then load the `straight_to_rest.xml` file. This will move the robot back to its resting position. Make sure it can move to the rest position without encountering any obstacles.
 
 2. Load the `main.xml` file again.
 
