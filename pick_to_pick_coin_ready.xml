@@ -5,7 +5,7 @@
     <Sub Nr="2" File="check_starting_pose.xml" Descr="" />
     <Output Nr="3" Channel="DOut27" State="False" Descr="" />
     <If Nr="4" Condition="pose_ok = 1" Descr="" />
-    <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="60" acc="100" smooth="50" a1="-26.2" a2="19.9" a3="38.9" a4="-59.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
+    <Joint AbortCondition="False" Nr="5" Source="Numerical" velPercent="60" acc="100" smooth="50" a1="-25.3" a2="19.9" a3="38.9" a4="-59.1" a5="0" a6="0" e1="0" e2="0" e3="0" Descr="" />
     <Comment Nr="6" Descr="Return pose state (0011)" />
     <Output Nr="7" Channel="DOut25" State="False" Descr="0" />
     <Output Nr="8" Channel="DOut24" State="False" Descr="0" />

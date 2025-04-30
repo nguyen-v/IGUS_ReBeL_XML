@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Program>
     <Header RobotName="igus REBEL-4DOF" RobotType="REBEL-4DOF-02" GripperType="" Software="iRC V902-14-003" VelocitySetting="0" />
-    <Store Nr="1" Type="position" Value="197.2869 161.4774 616.7829 39.29999 -3E-06 0" ValueJoints="39.3 3.8 71.7 -75.5 0 0 0 0 0" Name="starting_pose" Descr="" />
+    <Store Nr="1" Type="position" Value="194.7262 164.5564 616.7829 40.19999 -3E-06 0" ValueJoints="40.2 3.8 71.7 -75.5 0 0 0 0 0" Name="starting_pose" Descr="" />
     <Sub Nr="2" File="check_starting_pose.xml" Descr="" />
     <Output Nr="3" Channel="DOut27" State="False" Descr="" />
     <If Nr="4" Condition="pose_ok = 1" Descr="" />
